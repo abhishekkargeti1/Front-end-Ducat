@@ -1,6 +1,6 @@
 
 /* External Css */
-*{
+/* *{
     margin: 0;
     padding: 0;
 }
@@ -19,4 +19,39 @@
 }
 #h1{
     background-color: red;
+} */
+
+/* Grouping selector */
+
+/* .h1,#h2{
+    background-color: red;
+} */
+
+/* Universal selector */
+
+/* *{
+    background-color: brown;
+} */
+
+/* Combinator selector */
+div p{
+    background-color: red;
+    color:white;
 }
+
+/* Direct child selector */
+div>p{
+    background-color: green;;
+}
+
+/* Immediate child selector*/
+div+p{
+    background-color: black;
+}
+
+/* To selector outside the div */
+div~p{
+    background-color: azure;
+}
+
+
