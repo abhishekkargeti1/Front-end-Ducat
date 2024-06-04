@@ -33,25 +33,156 @@
     background-color: brown;
 } */
 
+
 /* Combinator selector */
-div p{
+
+/* div p{
     background-color: red;
     color:white;
-}
+} */
 
 /* Direct child selector */
-div>p{
+
+/* div>p{
     background-color: green;;
-}
+} */
 
 /* Immediate child selector*/
-div+p{
+
+/* div+p{
     background-color: black;
-}
+} */
 
 /* To selector outside the div */
-div~p{
+
+/* div~p{
     background-color: azure;
+} */
+
+/* Pesudo class selector */
+
+/* link */
+
+/* a:link{
+    color: red;
+} */
+
+/* visited link */
+
+/* a:visited{
+    color: green;
+} */
+
+/* mouse over link */
+
+/* a:hover{
+    color:blue;
+} */
+
+/* selected link */
+
+/* a:active{
+    color:aqua;
+} */
+
+/* How to select single line  */
+
+/* p:first-of-type{
+    background-color:yellow;
+}
+p:last-of-type{
+    background-color:green;
+}
+p:nth-of-type(3){
+    background-color:red;
+}
+p:nth-of-type(5){
+    background-color:blue;
+}
+p:nth-of-type(8){
+    background-color:violet;
+} */
+
+/* p:nth-last-child(odd){
+    background-color: red;
+}
+p:nth-last-child(even){
+    background-color: blue;
+} */
+
+
+/* how to select line from a paragraph */
+/* pesudo element selector  */
+
+/* p::before{
+    content: "mr   ";
+    background-color: red;
+}
+p::after{
+    content: "   Kargeti";
+    background-color: blue;
+} */
+
+/* How to select first letter of a line */
+
+/* h1::first-letter{
+    background-color: black;
+} */
+
+/* h1::first-line{
+    background-color: green;
+} */
+
+
+/* MArgin and Padding */
+.Margin{
+    height: 300px;
+    width:300px;
+    background-color: red;
+    /* margin-top: 200px; */
+    /* margin-left: 300px; */
+    margin: 40px 20px 30px 100px;
+}
+.Padding{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    padding: 200px;
 }
 
+/* Border */
+.Border{
+    height: 200px;
+    width: 200px;
+    padding-top:30px;
+    padding-left:20px ;
+    background-color: blue;
+    border-radius: 50%;
+}
 
+/* Background-image */
+.Background-image{
+    height: 200px;
+    width: 200px;
+    background-image: url(../image/music.svg);
+    padding: 0px;
+    border-radius: 50px;
+    /* background-repeat: repeat; */
+     background-size: cover; 
+    background-repeat: no-repeat;
+    background-color: red;
+   
+}
+
+/* Fornt Style */
+
+div{
+    background-color: red;
+}
+div h1{
+    color:white;
+    font-size: 40px;
+    font-weight: 30px;
+    font-family:sans-serif;
+    text-align: center;    
+}
