@@ -176,7 +176,7 @@ p::after{
 
 /* Fornt Style */
 
-div{
+/* div{
     background-color: red;
 }
 div h1{
@@ -185,4 +185,40 @@ div h1{
     font-weight: 30px;
     font-family:sans-serif;
     text-align: center;    
+} */
+
+/* Text decoration */
+
+h1{
+    text-transform:uppercase ;
+    text-transform: capitalize; 
+    text-transform:lowercase;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration: overline;
+}
+
+/* Border */
+
+.Border1{
+    width: 100px;
+    height: 100;
+    /* border:solid 20px brown; */
+    border: dashed 20px brown;
+    text-align: center;
+
+}
+
+/* box shadow */
+
+.shadow{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    padding-top: 140px;
+    margin: 220px;
+    box-shadow: 10px 10px 8px yellow;
 }

@@ -1,0 +1,28 @@
+/* All positions */
+/* .box{
+    height: 2000px;
+    width: 200px;
+    background-color: red;
+    
+
+} */
+/* .box2{
+    height: 100px;
+    width: 100px;
+    background-color: green; */
+    /* position: absolute; */
+    /* position: relative; */
+    /* position: fixed; */
+    /* position: sticky; */
+    /* top:20px; */
+/* } */
+
+
+
+/* overflow */
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    overflow: scroll;
+}

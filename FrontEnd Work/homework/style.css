@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50px;
+    height: 200px;
+}
+
+.logo {
+  height: 200px;
+  width: 50px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  padding-right: 200px;
+}
+h1{
+    color: black;
+    font-family:sans-serif;
+    font-size: 50px;
+    letter-spacing: 2.5;
+    margin-left: 100px;
+}
+

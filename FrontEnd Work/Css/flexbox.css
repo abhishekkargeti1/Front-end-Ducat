@@ -1,0 +1,38 @@
+.container{
+    height: 200px;
+    width: 1200px;
+    /* background-color: aqua; */
+    /* opacity: 0; */
+    /* display: none; */
+    display: flex;
+    flex-direction: row;
+    /* gap: 120px; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: stretch; */
+    justify-content: space-evenly;
+    align-items: center;
+}
+.innerbox{
+    height: 200px;
+    width: 200px;
+    background-color: black;
+}
+.innerbox1{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    /* margin-left: 200px; */
+}
+.innerbox2{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    /* margin-left: 200px; */
+}
+.nav{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
