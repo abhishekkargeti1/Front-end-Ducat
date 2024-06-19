@@ -1,0 +1,58 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.box:hover{
+    transform: rotate(45deg);
+}
+
+
+
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.box1:hover{
+    
+    transform: skew(45deg);
+}
+
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transition: all;
+    transition-duration:5s ;
+}
+.box2:hover{
+    width: 1000px;
+}
+
+.box3{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    animation-name: change;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes change {
+    0%{
+        background-color: green;
+    }
+    50%{
+        background-color: aqua;
+    }    
+    70%{
+        background-color: blue;
+    }
+    100%{
+        background-color: chartreuse;
+    }
+}
+
