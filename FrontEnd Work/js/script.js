@@ -185,19 +185,146 @@
 // console.log(evenSum);
 // console.log(OddSum);
 
-let num =8;
-let i =2;
-let count=0;
-while(i<7){
-    if(num%i==0){
-        count++
+// let num =8;
+// let i =2;
+// let count=0;
+// while(i<7){
+//     if(num%i==0){
+//         count++
         
-    }
+//     }
    
-    i++
-}
-if(count ==0){
-    console.log("Number is prime "+num);
-}else{
-    console.log("Number is not prime "+num);
-}
+//     i++
+// }
+// if(count ==0){
+//     console.log("Number is prime "+num);
+// }else{
+//     console.log("Number is not prime "+num);
+// }
+
+
+
+// types of function 
+
+
+// 1. function statement
+
+// function fun(num1,num2){
+//     console.log(num1+num2);
+// }
+// fun(20,30)
+
+
+// 2. function expression
+
+
+// const sum = function(num1,num2){
+//     console.log(num1+num2);
+// }
+// sum(20,30)
+
+// function hosting not work here.
+
+
+// arrow function
+
+// const sum=(a,b)=>console.log(a+b);
+// sum(20,30)
+
+
+// implicit
+
+// function sum(num1,num2){
+//     return num1+num2
+// }
+// console.log(sum(10,10))
+
+
+// explicit return in arrow function
+
+// const sum=(num1,num2)=>{
+//     return num1+num2
+// }
+// console.log(sum(10,10));
+
+
+
+
+// const sum = (a,b)=>a+b // call back function
+
+
+// high order function
+
+// function cal(fun){ 
+//     return fun
+// }
+
+// console.log(cal(sum(10,20)));
+
+
+
+// immediate invoke function expression(iife)
+
+// (function(a,b){
+//     console.log(a+b)
+// })(10,10)
+
+
+// function outer(){
+//     console.log("hi i am outer function")
+//     function inner(){
+//         console.log("hi i am inner function")
+//     }
+//     return inner;
+// }
+
+// outer()()
+
+
+//Lexical scope is also called closer.
+
+
+
+// function outer(){
+//     let a =20;
+//     function inner(){
+//         console.log(a);
+//     }
+//     return inner;
+// }
+// outer()();
+
+
+// let result=outer();
+// result()
+
+
+
+// function a(a){
+//     return function b(b){
+//         return function c(c){
+//             return a+b+c
+//         }
+//     }
+// }
+// console.log(a(10)(20)(30));
+
+
+
+
+// Array
+
+// let arr=[12,23,45,43,54,65,"abhishek","simran",56,"divesh",67,true]
+
+// console.log(arr[1]);
+
+// for(let i=0;i<arr.length;i++){
+//     console.log(arr[i]);
+// }
+
+// for(let i=0;i<=arr.length;i++){
+//     if(typeof(arr[i])==="number"){
+//         console.log(arr[i]);
+//     }
+// }
+
