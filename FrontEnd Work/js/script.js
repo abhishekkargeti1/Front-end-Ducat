@@ -328,3 +328,229 @@
 //     }
 // }
 
+let arr1=[12,12,16,17,23,43,3,6]
+let min= arr1[0]
+for(let i=0;i<=arr1.length-1;i++){
+    if(min>arr1[i]){
+        min =arr1[i]
+
+    }
+}
+console.log("Min number is " + min)
+
+let arr=[12,12,16,17,23,43,3,6]
+let max= arr[0]
+for(let i=0;i<=arr.length-1;i++){
+    if(max<arr[i]){
+        max =arr[i]
+
+    }
+}
+console.log("Max number is " + max)
+
+let arr2 = [12,12,16,17,23,43,3,6]
+
+for(i=0;i<=arr2.length;i++){
+let count=0;
+let  num=i;
+for(let i=2;i<num;i++){
+    if(num%i==0){
+        count ++;
+    }
+}
+if(count==0){
+    console.log("Prime number" +num);
+}else{
+    console.log("Not Prime number" +num);
+
+}
+}
+
+
+arr =[12,12,4,56,6,7,8,8,8,3]
+// arr.push(0)
+// arr.pop()
+arr.unshift("hi")
+arr.shift()
+console.log(arr);
+
+// let arr4=[]
+// for(let i =0;i<=5;i++){
+//    let element = +prompt("Enter element")
+//     arr4.push(element)
+// }
+// console.log(arr4)
+
+// object 
+
+// defination of object In JavaScript, an object is a collection of key-value pairs, where each key (also called a property name) is a string and each value can be any data type (including other objects)
+
+// const human ={
+//     name:"abhishek",
+//     age:21,
+//     height:6.1
+
+// }
+// console.log(human.name)
+// console.log(human.age)
+// console.log(human.height)
+
+
+// for(let i in human){
+//     console.log(i ,"",human[i]);
+// }
+
+
+// const animal ={
+//     dog:{
+//         breed : "desi" ,
+//         name :{
+//             nickname:{
+//                 genralName:"sheru"
+//             }
+//         }        
+//     },
+//     cat:{
+//         breed: "parishan",
+//         name:"kity"
+//     },
+// }
+// console.log(animal.dog.name.nickname.genralName)
+
+// let arr5=[]
+// const human1 ={
+//     name:"abhishek",
+//     age:"34",
+//     Height:"6.1"
+
+// }
+
+// for(let i in human1){
+//         let element =i;
+//         let value =human1[i];
+//         arr5.push(element,value)
+// }
+// console.log(arr5);
+
+// const keyArray=Object.keys(human1)
+// const ValueArray=Object.values(human1)
+// const KeyValueArray=Object.entries(human1)
+// console.log(keyArray)
+// console.log(ValueArray)
+// console.log(KeyValueArray)
+
+
+window:{
+    document:{
+        html:{
+            head:{}
+            body:{}
+        }
+    }
+}
+
+// const div = document.getElementById("div1");
+// div.style.height="200px";
+// div.style.width="200px";
+// div.style.backgroundColor="red";
+
+// div.addEventListener("click",()=>{
+//     if(div.style.backgroundColor=="red"){
+//         div.style.backgroundColor="green"
+//     }else{
+//         div.style.backgroundColor="red"
+//     }
+// })
+
+
+// getElementById = directly select the id
+// const h1 = document.getElementById("h1");
+// h1.style.backgroundColor="red"
+
+// getElementsByClassName = gives an array 
+// const h11= document.getElementsByClassName("h1");
+// h11[0].style.backgroundColor="green"
+// h11[1].style.backgroundColor="blue"
+// h11[2].style.backgroundColor="yellow"
+
+
+// document.querySelector
+
+// const h12 = document.querySelector(".h1")
+// h12.style.backgroundColor="black"
+
+//documnet.querySelectorAll
+
+// const h13 = document.querySelectorAll(".h1")
+// h13.forEach(h13 =>{
+// h13.style.backgroundColor="blue"
+// })
+
+
+// const body = document.querySelector("body")
+// const div =document.createElement("div")
+// div.style.height="200px"
+// div.style.width="200px"
+// div.style.backgroundColor="red"
+// div.style.backgroundImage="url(../image/download.jpeg)"
+// body.appendChild(div)
+// console.log(body);
+
+
+
+// const body = document.querySelector("body")
+// console.log(body);
+// const btn = document.createElement("button")
+// btn.innerText="Click Here"
+// btn.style.backgroundColor="green"
+// btn.style.height="20px"
+// const h1 = document.createElement("h1")
+// h1.innerHTML="Abhishek"
+// body.appendChild(h1);
+// body.appendChild(btn);
+
+
+
+
+
+
+const btn = document.getElementById("btn");
+btn.addEventListener("click", () => {
+  const userInput = document.getElementById("userInput").value.trim();
+  if (userInput) {
+    const list = document.getElementById("list");
+    const li = document.createElement("li");
+    const btn1 = document.createElement("button");
+    const btn2 = document.createElement("button");
+    
+    // Set button text
+    btn1.innerText = "Delete";
+    btn2.innerText = "Edit";
+    
+    // Delete button functionality
+    btn1.onclick = () => {
+      li.remove();
+    };
+    
+    // Edit button functionality
+    btn2.onclick = () => {
+      const newText = prompt("Edit your input:", li.firstChild.textContent);
+      if (newText !== null && newText.trim() !== "") {
+        li.firstChild.textContent = newText.trim();
+      }
+    };
+    
+    // Set the list item text and append buttons
+    li.textContent = userInput;
+    li.appendChild(btn1);
+    li.appendChild(btn2);
+    
+    // Append the list item to the list
+    list.appendChild(li);
+    
+    // Clear the input field
+    document.getElementById("userInput").value = "";
+  }
+  console.log(userInput);
+});
+
