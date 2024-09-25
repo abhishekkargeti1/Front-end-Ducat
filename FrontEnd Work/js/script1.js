@@ -61,3 +61,15 @@
 // },0)
 
 // console.log(ans);
+
+
+
+// sort 
+
+let arr = [112,13,43,54,0,6,4,45]
+
+let ans = arr.sort((a,b)=>{
+    return a-b;
+})
+
+console.log(ans);
